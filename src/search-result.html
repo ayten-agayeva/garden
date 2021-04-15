@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container search_page">
+    <div class="page_title_wrap">
+        <div class="page_title">Zambaqlar kateqoriyasında <div class="keyword">"sunshine"</div>sözü üçün əldə edilən <div class="result_count">241</div> nəticə.</div>
+    </div>
+    <div class="tabs_wrap">
+        <div class="tabs tabs1" data-target=".product_list_tab">
+            <a class="active">Yeni məhsullar</a>
+            <a>Endirimli məhsullar</a>
+            <a>Avrobuketlər</a>
+            <a>Toy Buketləri</a>
+            <a>Hədiyyələr</a>
+        </div>
+        <div class="d_dropdown">
+            <span class="sort">Sort <img src="images/sort.svg" /></span>
+            <div class="drop_content">
+                <a>Reytinq üzrə</a>
+                <a>Ucuzdan bahaya</a>
+                <a>Bahadan ucuza</a>
+            </div>
+        </div>
+    </div>
+    <div class="product_list_tab tabs_content">
+        <div class="row active product_list" data-match-height=".item">
+            {% for i in 0..15 %}
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="product-page.html" class="item">
+                        <span class="img"><img src="images/product-img{{i%3+1}}.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div data-match-height=".item" class="row product_list">
+            {% for i in 0..3 %}
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="" class="item">
+                        <span class="img"><img src="images/product-img{{i%3+1}}.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div data-match-height=".item" class="row product_list">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="" class="item">
+                        <span class="img"><img src="images/product-img.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+        </div>
+        <div data-match-height=".item" class="row product_list">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="" class="item">
+                        <span class="img"><img src="images/product-img1.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+        </div>
+        <div data-match-height=".item" class="row product_list">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="" class="item">
+                        <span class="img"><img src="images/product-img2.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="" class="more_btn">Daha çox</a>
+</div>
+<div class="form subscribe">
+    <form>
+        <input name="email" class="validate[required,custom[email]]" type="email" placeholder="E-mail" />
+        <button type="submit" class="">Abunə ol</button>
+    </form>
+</div>
+{% endblock %}

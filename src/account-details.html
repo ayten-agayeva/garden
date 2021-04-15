@@ -1,0 +1,179 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Profil məlumatları</span></a>
+                <span itemprop="position" content="3"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="page_title_wrap">
+        <h1 class="page_title">Profil məlumatları</h1>
+        <div class="user">
+            <div class="user_img">
+                <img src="./images/user.png">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info">
+                <span>info@marcom.az</span>
+                <a href=""><h2>Jesse Pinkman</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class="page_desc visible-xs">Latin words, combined with a handful of model sentence structures, 
+        to generate Lorem Ipsum which looks reason-able. The generated Lorem Ipsum is therefore always.</div>
+    <form method="" class="validation account_form" action="">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Ad, Soyad</label>
+                            <input name="name" class="validate[required,minSize[6]]" type="text" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>E-poçt</label>
+                            <input name="email" class="validate[required,custom[email]]" type="email" />
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Telefon</label>
+                            <input type="text" class="validate[required]" data-mask="phone" />
+                            <span class="alert_phone hint--left hint--medium" data-hint="A pure CSS tooltip library for your lovely websites"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Şifrə</label>
+                            <input required name="password" class="validate[required,minSize[6]] password" type="password" />
+                            <div class="hide-show pass_visibility"><span></span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Təkrar Şifrə</label>
+                            <input required name="password_r" class="validate[required,minSize[6],equals[password]] password" type="password" />
+                            <div class="hide-show pass_visibility pass_confirm"><span></span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button type="submit" class="btn">Yadda saxla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="address row" data-match-height=".item">
+					<div class="col-md-4">
+						<div class="item">
+							<label><input type="radio" name="address"><span>Qarayev ev</span></label>
+							<div class="detail">
+								<p>Hikmat Gafarzada</p>
+								<p>36 Academician Hasan Aliyev St</p>
+								<p>(+99450) 286 90 75</p>
+								<p>AZ1000</p>
+							</div>
+                            <div class="d_dropdown">
+                                <div class="drop_content">
+                                    <button type="button" class="open_popup" data-target=".shopping-cart-address">Redaktə et</button>
+                                    <a href="/sil">Sil</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="item">
+							<label><input type="radio" name="address"><span>Fidan</span></label>
+							<div class="detail">
+								<p>Fidan</p>
+								<p>36 Academician Hasan Aliyev St</p>
+								<p>(+99450) 286 90 75</p>
+								<p>AZ1000</p>
+							</div>
+							<div class="d_dropdown">
+                                <div class="drop_content">
+                                    <button type="button" class="open_popup" data-target=".shopping-cart-address">Redaktə et</button>
+                                    <a href="/sil">Sil</a>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a class="item add open_popup" data-target=".shopping-cart-address">
+							Ünvan əlavə et
+						</a>
+					</div>
+				</div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="popup popup_form shopping-cart-address">
+	<div class="popup_form_inner">
+		<h1>Çatdırılma məlumatları</h1>
+		<div class="form">
+			<form method="post" class="validation" action="">
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ad, Soyad</label>
+						<input name="name" class="validate[required,minSize[3]]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ünvan</label>
+						<input name="adress" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ünvana yaxın yer</label>
+						<input name="adress1" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Telefon</label>
+						<input type="text" class="validate[required]" data-mask="phone" />
+						<span class="alert_phone"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Poçt kod</label>
+						<input name="postal" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ünvan başlığı*</label>
+						<input name="adresstitle" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<button type="submit" class="btn">Yadda saxla</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

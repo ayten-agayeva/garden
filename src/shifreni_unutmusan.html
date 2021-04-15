@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Şifrəni unutmusan?</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+	<h2 class="page_title">Şifrəni unutmusan?</h2>
+    <div class="forget_password">
+        <div class="form">
+            <form method="post" class="validation" action="">
+                <span class="text">Şifrənizin dəyişdirilməsi barədə olan məktub göstərdiyiniz elektron ünvana göndəriləcək.</span>
+                <div class="row">
+                    <div class="col-xs-12"><label for="email">E-poçt</label>
+                        <input name="email" class="validate[required,custom[email]]" type="email" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-right">
+                        <button type="submit">Göndər</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">404</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+	<div class="not_found">
+		<div class="img"><span class="error404"></span></div>
+		<div>
+			<div class="title">Axtardığınız  səhifə mövcud deyil.</div>
+			<a href="index.html" class="btn back_homepage">Ana səhifəyə qayıt<i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,206 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Xatırlatma</span></a>
+                <span itemprop="position" content="3"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="page_title_wrap">
+        <h1 class="page_title">Xatırlatma</h1>
+        <div class="user">
+            <div class="user_img">
+                <img src="./images/user.png">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info">
+                <span>info@marcom.az</span>
+                <a href=""><h2>Jesse Pinkman</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class="page_desc visible-xs">Latin words, combined with a handful of model sentence structures, 
+        to generate Lorem Ipsum which looks reason-able. The generated Lorem Ipsum is therefore always.</div>
+    <div class="temp_page">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="temps" id="temps">
+                    <h2>Şablonlar</h2>
+                    <div class="create_temp"  id="create_temp"><button>Yeni xatırlatma yarat</button></div>
+                    <div class="temp_item_wrap">
+                        <div class="temp_item" data-name="Dorothy Jones" data-type="1" data-date="07.11.1990" data-before="1" data-email="sdfsd@sdf.com" data-mobile="994555555555" >
+                            <div>
+                                <p>Dorothy Jones</p>
+                                <p>Doğum günü - 07.11.1990</p>
+                            </div>
+                            <div class="">
+                                <label class="switch">
+                                    <input type="checkbox" class="switch-input">
+                                    <span class="switch-label"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="temp_item">
+                            <div>
+                                <p>Dorothy Jones</p>
+                                <p>Doğum günü - 07.11.1990</p>
+                            </div>
+                            <div class="">
+                                <label class="switch">
+                                    <input type="checkbox" class="switch-input">
+                                    <span class="switch-label"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="temp_item">
+                            <div>
+                                <p>Dorothy Jones</p>
+                                <p>Doğum günü - 07.11.1990</p>
+                            </div>
+                            <div class="">
+                                <label class="switch">
+                                    <input type="checkbox" class="switch-input">
+                                    <span class="switch-label"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="temp_item">
+                            <div>
+                                <p>Dorothy Jones</p>
+                                <p>Doğum günü - 07.11.1990</p>
+                            </div>
+                            <div class="">
+                                <label class="switch">
+                                    <input type="checkbox" class="switch-input">
+                                    <span class="switch-label"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="temp_item">
+                            <div>
+                                <p>Dorothy Jones</p>
+                                <p>Doğum günü - 07.11.1990</p>
+                            </div>
+                            <div class="">
+                                <label class="switch">
+                                    <input type="checkbox" class="switch-input">
+                                    <span class="switch-label"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="temp_item">
+                            <div>
+                                <p>Dorothy Jones</p>
+                                <p>Doğum günü - 07.11.1990</p>
+                            </div>
+                            <div class="">
+                                <label class="switch">
+                                    <input type="checkbox" class="switch-input">
+                                    <span class="switch-label"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="temp_item">
+                            <div>
+                                <p>Dorothy Jones</p>
+                                <p>Doğum günü - 07.11.1990</p>
+                            </div>
+                            <div class="">
+                                <label class="switch">
+                                    <input type="checkbox" class="switch-input">
+                                    <span class="switch-label"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 tabs_content">
+                <div class="create_temp_block" id="edit_temp">
+                    <h2>Yeni xatırlatma <a class="delete hide"></a></h2>
+                    <form action="" method="">
+                        <div class="form">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Ad, Soyad</label>
+                                    <input name="name" class="validate[required]" type="text" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Xüsusi gün</label>
+                                    <select name="type">
+                                        <option></option>
+                                        <option value="1">Doğum günü</option>
+                                        <option value="2">Evlilik</option>
+                                        <option value="3">Elə-belə</option>
+                                    </select>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Tarixi seçin</label>
+                                    <input name="date" class="datepicker_dd_mm" type="text" readonly>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Nə qədər əvvəl</label>
+                                    <select name="before">
+                                        <option></option>
+                                        <option value="1">Bir həftə</option>
+                                        <option value="2">Bir gün əvvəl</option>
+                                    </select>
+                                </div>
+                            </div> 
+                            <div class="alert">
+                                Xatırlatma haqqında bildiriş almaq üçün mail və ya telefon nömrənizi qeyd edin.
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>E-poçt</label>
+                                    <input name="email" class="validate[required,custom[email]]" type="email" />
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label>Telefon nömrəsi</label>
+                                    <input name="mobile" type="text" class="validate[required]" data-mask="phone" />
+                                    <span class="alert_phone hint--left hint--medium" data-hint="Xatırlatma haqqında bildiriş almaq üçün mail və ya telefon nömrənizi qeyd edin."></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <button type="submit" class="btn">Yadda saxla</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

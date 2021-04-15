@@ -1,0 +1,13 @@
+<svg id="pay" xmlns="http://www.w3.org/2000/svg" width="28.571" height="25" viewBox="0 0 28.571 25">
+  <path id="Path_4028" data-name="Path 4028" d="M16.666,45.685a1.786,1.786,0,0,1,1.354-1.732l4.762-1.19a1.744,1.744,0,0,1,.871,0l2.537.636V34.971A2.976,2.976,0,0,0,23.214,32H2.976A2.976,2.976,0,0,0,0,34.971V48.066a2.976,2.976,0,0,0,2.976,2.976h13.69V45.685Z" transform="translate(0 -31.995)" fill="#cfd8dc"/>
+  <rect id="Rectangle_2730" data-name="Rectangle 2730" width="26.19" height="4.762" transform="translate(0 3.571)" fill="#455a64"/>
+  <g id="Group_2039" data-name="Group 2039" transform="translate(3.571 11.904)">
+    <path id="Path_4029" data-name="Path 4029" d="M69.357,246.518H64.6a.6.6,0,1,1,0-1.19h4.762a.6.6,0,1,1,0,1.19Z" transform="translate(-64 -245.327)" fill="#90a4ae"/>
+    <path id="Path_4030" data-name="Path 4030" d="M72.928,289.184H64.6a.6.6,0,1,1,0-1.19h8.333a.6.6,0,1,1,0,1.19Z" transform="translate(-64 -285.613)" fill="#90a4ae"/>
+  </g>
+  <path id="Path_4031" data-name="Path 4031" d="M330.264,246.544l-4.762-1.19a.6.6,0,0,0-.288,0l-4.762,1.19a.6.6,0,0,0-.451.577v7.143c0,1.84,3.928,3.619,5.128,4.121a.6.6,0,0,0,.458,0c1.2-.5,5.127-2.281,5.127-4.121v-7.143A.6.6,0,0,0,330.264,246.544Z" transform="translate(-302.144 -233.431)" fill="#33b544"/>
+  <g id="Group_2040" data-name="Group 2040" transform="translate(20.238 14.358)">
+    <path id="Path_4032" data-name="Path 4032" d="M365.643,289.3l-2.976.6v3.5h2.976Z" transform="translate(-362.667 -289.296)" fill="#fafafa"/>
+    <path id="Path_4033" data-name="Path 4033" d="M416,362.661v3.933l2.976-1.451v-2.482Z" transform="translate(-413.024 -358.567)" fill="#fafafa"/>
+  </g>
+</svg>

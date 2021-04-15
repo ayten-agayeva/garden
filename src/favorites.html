@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Seçilmişlər</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container favorites_page">
+    <div class="product_list">
+        <h2 class="page_title">Seçilmişlər</h2>
+        <div class="row" data-match-height=".item">
+            {% for i in 0..11 %}
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="product-page.html" class="item">
+                        <span class="img"><img src="images/product-img{{i%3+1}}.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

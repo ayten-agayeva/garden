@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Konsiyerj</span></a>
+                <span itemprop="position" content="3"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="page_title_wrap">
+        <h1 class="page_title">Konsiyerj</h1>
+        <div class="user">
+            <div class="user_img">
+                <img src="./images/user.png">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info">
+                <span>info@marcom.az</span>
+                <a href=""><h2>Jesse Pinkman</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class="page_desc visible-xs">Latin words, combined with a handful of model sentence structures, 
+        to generate Lorem Ipsum which looks reason-able. The generated Lorem Ipsum is therefore always.</div>
+    <div class="temp_page konsiyerj_temp">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="temps" id="temps">
+                    <h2>Şablonlar</h2>
+                    <a class="create_temp"><button>Yeni konsiyerj yarat</button></a>
+                    <div class="temp_item_wrap tabs" data-target=".tabs_content">
+						{% for i in 1..8 %}
+						<a class="temp_item">
+							<div>
+								<p>Dorothy Jones</p>
+								<p>Doğum günü - 07.11.199{{i}}</p>
+							</div>
+							<div class="">
+								<label class="switch">
+									<input type="checkbox" class="switch-input">
+									<span class="switch-label"></span>
+									<span class="switch-handle"></span>
+								</label>
+							</div>
+						</a>
+						{% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 tabs_content">
+				{% for i in 1..8 %}
+                <div class="create_temp_block" id="edit_temp">
+                    <div class="content_title">
+                        <h2>Yeni konsiyerj <a class="delete"></a></h2>
+                    </div>
+                    <div class="konsiyerj">
+                        <div class="lf">
+                            <div class="title">A Year of Fortnightly Flowers</div>
+                            <div class="no">#33{{i}}</div>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="title">Ölçü</div>
+                                    <span>Standart</span>
+                                </div>
+                                <div>
+                                    <div class="title">Gül sayı</div>
+                                    <span>{{i}}</span>
+                                </div>
+                                <div>
+                                    <div class="title">Qiymət</div>
+                                    <span>8{{i}} ₼</span>
+                                </div>
+                            </div>
+                            <div class="title">Əlavə məhsullar</div>
+                            <div class="additional_product">
+                                <span>2x</span>
+                                <div class="add_pr_title">
+                                    <span>Oyuncaq ayı</span>
+                                    <span class="add_price">(+50.00 ₼)</span>
+                                </div>
+                            </div>
+                            <div class="additional_product">
+                                <span>1x</span>
+                                <div class="add_pr_title">
+                                    <span>Şarlar</span>
+                                    <span class="add_price">(+20.00 ₼)</span>
+                                </div>
+                            </div>
+                            <div class="additional_product">
+                                <span>4x</span>
+                                <div class="add_pr_title">
+                                    <span>Şokolad</span>
+                                    <span class="add_price">(+20.00 ₼)</span>
+                                </div>
+                            </div>
+                            <div class="additional_product">
+                                <span>4x</span>
+                                <div class="add_pr_title">
+                                    <span>Vaza</span>
+                                    <span class="add_price">(+20.00 ₼)</span>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <label>Total:</label><div>320 ₼</div>
+                            </div>
+                        </div>
+                        <div class="rt">
+                            <div class="pro_img_group">
+                                <div class="pro_imgs">
+                                    <div class="item"><img src="/images/sample/basket_item.png"/></div>
+                                    <div class="item"><img src="/images/sample/basket_item.png"/></div>
+                                    <div class="item"><img src="/images/sample/basket_item.png"/></div>
+                                </div>
+                                <div class="pro_big_img">
+                                    <img src="/images/2.png"/>
+                                </div>
+                            </div>
+                            <form action="" method="">
+                                <div class="form">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <label>Təsvir</label>
+                                            <input type="text" class="validate[required]" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <label>Sifariş dövrü</label>
+                                            <select>
+                                                <option selected="selected" class="placeholder">Aylıq</option>
+                                                <option>Həftəlik</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <button type="submit" class="btn">Yadda saxla</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+				{% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Fərdi sifariş</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="page_title_wrap">
+        <h1 class="page_title">Fərdi sifariş</h1>
+        <div class="user">
+            <div class="user_img">
+                <img src="./images/user.png">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info">
+                <span>info@marcom.az</span>
+                <a href=""><h2>Jesse Pinkman</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class="page_desc">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reason-able. The generated Lorem Ipsum is therefore always.</div>
+    <form>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="upload_file">
+                    <img src="./images/photo.svg" />
+                    <div class="drag">Şəkli sürüştür </div>
+                    <div class="or">və ya </div>
+                    <button type="button">Faylı yüklə</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="order_send_block">
+                    <label>Mətn</label>
+                    <textarea placeholder="Kartdakı mətn" data-max="300"></textarea>
+                    <button type="button">Göndər</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

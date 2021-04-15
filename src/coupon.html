@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Kuponlar</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container coupon">
+    <div class="page_title_wrap">
+        <h1 class="page_title">Kuponlar</h1>
+        <div class="user">
+            <div class="user_img">
+                <img src="./images/user.png">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info">
+                <span>info@marcom.az</span>
+                <a href=""><h2>Jesse Pinkman</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class="page_desc">Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reason-able. The generated Lorem Ipsum is therefore always.</div>
+    <div class="row coupon">
+        <div class="col-md-4">
+            <div class="item_wrap">
+                <div class="item">
+                    <div class="rw title">
+                        <div class="discount">20%</div> — PREMIUM20
+                    </div>
+                    <div>Orders Over 65.99₼</div>
+                    <div class="rw date">
+                        <div>Jul 1, 0:00</div>-
+                        <div>Jul 31, 23:59</div>
+                    </div>
+                </div>
+                <button class="copy_btn hint--top hint--bounce" data-clipboard-text="PREMIUM20" aria-label="Copied"></button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="item_wrap">
+                <div class="item">
+                    <div class="rw title">
+                        <div class="discount">20%</div> — PREMIUM20
+                    </div>
+                    <div>Orders Over 65.99₼</div>
+                    <div class="rw date">
+                        <div>Jul 1, 0:00</div>-
+                        <div>Jul 31, 23:59</div>
+                    </div>
+                </div>
+                <button class="copy_btn hint--top hint--bounce" data-clipboard-text="PREMIUM20" aria-label="Copied"></button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="item_wrap">
+                <div class="item">
+                    <div class="rw title">
+                        <div class="discount">20%</div> — PREMIUM20
+                    </div>
+                    <div>Orders Over 65.99₼</div>
+                    <div class="rw date">
+                        <div>Jul 1, 0:00</div>-
+                        <div>Jul 31, 23:59</div>
+                    </div>
+                </div>
+                <button class="copy_btn hint--top hint--bounce" data-clipboard-text="PREMIUM20" aria-label="Copied"></button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="item_wrap">
+                <div class="item">
+                    <div class="rw title">
+                        <div class="discount">20%</div> — PREMIUM20
+                    </div>
+                    <div>Orders Over 65.99₼</div>
+                    <div class="rw date">
+                        <div>Jul 1, 0:00</div>-
+                        <div>Jul 31, 23:59</div>
+                    </div>
+                </div>
+                <button class="copy_btn hint--top hint--bounce" data-clipboard-text="PREMIUM20" aria-label="Copied"></button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="item_wrap">
+                <div class="item">
+                    <div class="rw title">
+                        <div class="discount">20%</div> — PREMIUM20
+                    </div>
+                    <div>Orders Over 65.99₼</div>
+                    <div class="rw date">
+                        <div>Jul 1, 0:00</div>-
+                        <div>Jul 31, 23:59</div>
+                    </div>
+                </div>
+                <button class="copy_btn hint--top hint--bounce" data-clipboard-text="PREMIUM20" aria-label="Copied"></button>
+            </div>
+        </div>
+    </div>
+    <form action="" method="" class="row">
+        <div class="promocod col-md-8">
+            <input type="text" placeholder="Promokod">
+            <label>Promokod hal-hazırda aktivdir.</label>
+            <button type="submit" class="">Yoxla</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

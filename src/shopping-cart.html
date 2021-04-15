@@ -1,0 +1,285 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Səbət</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+	<form>
+		<div class="row">
+			<div class="col-md-9">
+				<div class="shopping-cart row">
+					<div class="header">
+						<div class="col-md-4 col-xs-12">Səbət<sup>3</sup></div>
+						<div class="col-md-8 hidden-xs">
+							<div class="row">
+								<div class="col-md-3">Qiymət</div>
+								<div class="col-md-3 count">Say</div>
+								<div class="col-md-4 col-md-offset-2">Cəm</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="item">
+							<div class="row">
+								<div class="col-md-4 ls">
+									<div class="img"><img src="/images/sample/basket_item.png"/></div>
+									<div class="detail">
+										<div class="no">#334</div>
+										<div class="title">A Year of Fortnightly Flowers</div>
+										<div class="desc">Oyuncaq ayı x2
+											Şarlar x2
+											Şokolad x1
+											Vaza x1</div>
+									</div>
+								</div>
+								<div class="col-md-8 rs">
+									<div class="row">
+										<div class="col-md-3 col-xs-4"><label class="visible-xs">Qiymət</label>80 ₼</div>
+										<div class="col-md-3 col-xs-4 count">
+											<label class="visible-xs">Say</label>
+											<div class="number-spinner">
+												<span class="ns-btn">
+													<a data-dir="dwn" class="dwn"><img src="images/remove.svg" title="" alt="" /></a>
+												</span>
+												<input type="text" class="pl-ns-value" max="20" min="1" value="1"/>
+												<span class="ns-btn">
+													<a data-dir="up" class="up"><img src="images/add.svg" title="" alt="" /></a>
+												</span>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-md-offset-2"><label class="visible-xs">Cəm</label>240 ₼</div>
+									</div>
+									<div class="text_on_cart">
+										<textarea placeholder="Kartdakı mətn" data-max="300">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden Sydny College in Virginia, looked up.</textarea>
+										<div class="text_length"><span>300</span><i></i></div>
+									</div>
+									<div class="noti">Finished with little craspedia sunshine scented freesia, she's such a joy.</div>
+								</div>
+							</div>
+							<a class="fav fav-a"></a>
+							<a class="del"></a>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="item">
+							<div class="row">
+								<div class="col-md-4 ls">
+									<div class="img"><img src="/images/sample/basket_item.png"/></div>
+									<div class="detail">
+										<div class="no">#334</div>
+										<div class="title">A Year of Fortnightly Flowers</div>
+										<div class="desc">Oyuncaq ayı x2
+											Şarlar x2
+											Şokolad x1
+											Vaza x1</div>
+									</div>
+								</div>
+								<div class="col-md-8 rs">
+									<div class="row">
+										<div class="col-md-3 col-xs-4"><label class="visible-xs">Qiymət</label>80 ₼</div>
+										<div class="col-md-3 col-xs-4 count">
+											<label class="visible-xs">Say</label>
+											<div class="number-spinner">
+												<span class="ns-btn">
+													<a data-dir="dwn" class="dwn"><img src="images/remove.svg" title="" alt="" /></a>
+												</span>
+												<input type="text" class="pl-ns-value" max="20" min="1" value="1"/>
+												<span class="ns-btn">
+													<a data-dir="up" class="up"><img src="images/add.svg" title="" alt="" /></a>
+												</span>
+											</div>
+										</div>
+										<div class="col-md-4 col-xs-4 col-md-offset-2"><label class="visible-xs">Cəm</label>240 ₼</div>
+									</div>
+									<div class="text_on_cart">
+										<textarea placeholder="Kartdakı mətn" data-max="300"></textarea>
+										<div class="text_length"><span>300</span><i></i></div>
+									</div>
+									<div class="noti">Finished with little craspedia sunshine scented freesia, she's such a joy.</div>
+								</div>
+							</div>
+							<a class="fav"></a>
+							<a class="del"></a>
+						</div>
+					</div>
+				</div>
+				<div class="delivery">
+					<div class="title">Çatdırılma vaxtı və ünvanı</div>
+					<div class="time-map row">
+						<div class="col-md-4">
+							<div class="time-block">
+								<input name="date" class="datepicker" placeholder="Tarix seçin" type="text" readonly>
+								<div class="desc">Finished with little crasp</div>
+								<select name="time">
+									<option></option>
+									<option value="1" selected>Gün ərzində</option>
+									<option value="2">Axsam vaxti</option>
+								</select>
+								<div class="desc">Finished with little crasp</div>
+							</div>
+						</div>
+						<div class="col-md-8 hidden-xs">
+							<div id="contact_maps" class="maps" data-maps="true" data-zoom="11" data-lat="40.47645" data-lng="49.78947"></div>
+						</div>
+					</div>
+					<div class="address row" data-match-height=".item">
+						<div class="col-md-4">
+							<div class="item">
+								<label><input type="radio" name="address"><span>Qarayev ev</span></label>
+								<div class="detail">
+									<p>Hikmat Gafarzada</p>
+									<p>36 Academician Hasan Aliyev St</p>
+									<p>(+99450) 286 90 75</p>
+									<p>AZ1000</p>
+								</div>
+								<div class="d_dropdown">
+									<div class="drop_content">
+										<button type="button" class="open_popup" data-target=".shopping-cart-address">Redaktə et</button>
+										<button type="button" class="open_popup" data-target=".shopping-cart-address">Yeni ünvan əlavə et</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="item">
+								<label><input type="radio" name="address"><span>Fidan</span></label>
+								<div class="detail">
+									<p>Fidan</p>
+									<p>36 Academician Hasan Aliyev St</p>
+									<p>(+99450) 286 90 75</p>
+									<p>AZ1000</p>
+								</div>
+								<div class="d_dropdown">
+									<div class="drop_content">
+										<button type="button" class="open_popup" data-target=".shopping-cart-address">Redaktə et</button>
+										<button type="button" class="open_popup" data-target=".shopping-cart-address">Yeni ünvan əlavə et</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<a class="item add open_popup" data-target=".shopping-cart-address">
+								Ünvan əlavə et
+							</a>
+						</div>
+						<div class="col-md-4 visible-xs">
+							<div id="maps" class="maps" data-maps="true" data-zoom="11" data-lat="40.47645" data-lng="49.78947"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shopping-cart-overview col-md-3">
+				<div class="sticky">
+					<div class="title">Total</div>
+					<div class="block">
+						<div class="promo-code">
+							<input type="text" name="promo-code" placeholder="Promo kod:" />
+							<button type="button">Yoxla</button>
+						</div>
+						<div class="price-overview">
+							<div class="title">Məbləğ:</div>
+							<div class="rw">
+								<label>Subtotal:</label><div>360 ₼</div>
+							</div>
+							<div class="rw">
+								<label>Promo endirim:</label><div>-20 ₼</div>
+							</div>
+							<div class="rw total">
+								<label>Total:</label><div>340 ₼</div>
+							</div>
+						</div>
+						<div class="line"></div>
+						<div class="payment">
+							<div class="title">Ödəmə üsulu seçin:</div>
+							<label class="method card">
+								<input type="radio" name="pay-method" value="card" />
+								<span>Kredit kartı</span>
+							</label>
+							<label class="method paypal">
+								<input type="radio" name="pay-method" value="card" />
+								<span><img src="images/method-paypal.svg"></span>
+							</label>
+							<label class="method cash">
+								<input type="radio" name="pay-method" value="card" />
+								<span>Nəğd ödəniş</span>
+							</label>
+						</div>
+						<label class="checkbox">
+							<input type="checkbox" />
+							<span>Bu sifariş haqda gələn il
+							mənə xatırlatma göndərin</span>
+						</label>
+						<label class="checkbox">
+							<input type="checkbox" />
+							<span><a target="_blank" href="/partners.html">Şərtlər ilə razıyam</a></span>
+						</label>
+						<button type="submit" class="pay">Ödə</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="popup popup_form shopping-cart-address">
+	<div class="popup_form_inner">
+		<h1>Çatdırılma məlumatları</h1>
+		<div class="form">
+			<form method="post" class="validation" action="">
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ad, Soyad</label>
+						<input name="name" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ünvan</label>
+						<input name="adress" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ünvana yaxın yer</label>
+						<input name="adress1" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Telefon</label>
+						<input type="text" class="validate[required]" data-mask="phone" />
+						<span class="alert_phone"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Poçt kod</label>
+						<input name="postal" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label>Ünvan başlığı*</label>
+						<input name="adresstitle" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<button type="submit" class="btn">Yadda saxla</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

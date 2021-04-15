@@ -1,0 +1,362 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Avro buketlər</span></a>
+                <span itemprop="position" content="2"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">A Year of Fortnightly Flowers</span></a>
+                <span itemprop="position" content="3"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="product_group">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product_imgs">
+                    <div class="tns_slider">
+                        <div><a class="item"><img src="images/2.png"/></a></div>
+                        <div><a class="item"><img src="images/sample/product_page_2.png"/></a></div>
+                        <div><a class="item"><img src="images/sample/product_page_3.png"/></a></div>
+                    </div>
+                    <div class="slider_big_img">
+						<a class="add_favorites"></a>
+						<div class="step"></div>
+						<div class="slider">
+							<div><img src="images/2.png"/></div>
+							<div><img src="images/sample/product_page_2.png"/></div>
+							<div><img src="images/sample/product_page_3.png"/></div>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="col-md-6 product_details">
+                <form action="" method="">
+                    <h1 class="title">A Year of Fortnightly Flowers</h1>
+                    <div class="product_code">
+                        <span>#332</span>
+                        <div class="stock">
+                            <img src="images/stock.svg">
+                            Anbarda mövcuddur.
+                        </div>
+                    </div>
+                    <b>Haqqında</b> 
+                    <p>Thought peonies couldn't get any more exciting? Think again. Because these ones are colour changing! Once they've burst open they change from coral ...</p>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-5">
+                            <b>Sifariş dövrü</b>
+                            <select>
+                                <option selected="selected" class="placeholder">Aylıq</option>
+                                <option>Həftəlik</option>
+                                </select>
+                                <b>Ölçü </b>
+                            <select>
+                                <option selected="selected" class="placeholder">Standart</option>
+                                <option>Böyük</option>
+                                <option>Kiçik</option>
+                            </select>
+                            <div class="noti">Finished with little craspedia sunshine scented freesia, she's such a joy.</div>
+                            <b>Gül sayı</b>
+                            <div class="number-spinner">
+                                <span class="ns-btn">
+                                    <a data-dir="dwn" class="dwn"><img src="images/remove.svg" title="" alt="" /></a>
+                                </span>
+                                <input type="text" class="pl-ns-value" max="20" min="0" value="0"/>
+                                <span class="ns-btn">
+                                    <a data-dir="up" class="up"><img src="images/add.svg" title="" alt="" /></a>
+                                </span>
+                            </div>
+                            <div class="pr_price">
+                                <span class="price old_price">45 ₼</span>
+                                <span class="price">30 ₼</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-7 additional_group">
+                            <b>Əlavə məhsullar</b>
+                            <div class="additional_product">
+                                <img src="images/kid-and-baby.svg" title="" alt="" />
+                                <div class="add_pr_title">
+                                    <span>Oyuncaq ayı</span>
+                                    <span class="add_price">(+50.00 ₼)</span>
+                                </div>
+                                <div class="number-spinner">
+                                    <span class="ns-btn">
+                                        <a data-dir="dwn" class="dwn"><img src="images/remove.svg" title="" alt="" /></a>
+                                    </span>
+                                    <input type="text" class="pl-ns-value" max="20" min="0" value="0"/>
+                                    <span class="ns-btn">
+                                        <a data-dir="up" class="up"><img src="images/add.svg" title="" alt="" /></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="additional_product">
+                                <img src="images/hobby.svg" title="" alt="" />
+                                <div class="add_pr_title">
+                                    <span>Oyuncaq ayı</span>
+                                    <span class="add_price">(+50.00 ₼)</span>
+                                </div>
+                                <div class="number-spinner">
+                                    <span class="ns-btn">
+                                        <a data-dir="dwn" class="dwn"><img src="images/remove.svg" title="" alt="" /></a>
+                                    </span>
+                                    <input type="text" class="pl-ns-value" max="20" min="0" value="0"/>
+                                    <span class="ns-btn">
+                                        <a data-dir="up" class="up"><img src="images/add.svg" title="" alt="" /></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="additional_product">
+                                <img src="images/chocolate.svg" title="" alt="" />
+                                <div class="add_pr_title">
+                                    <span>Oyuncaq ayı</span>
+                                    <span class="add_price">(+50.00 ₼)</span>
+                                </div>
+                                <div class="number-spinner">
+                                    <span class="ns-btn">
+                                        <a data-dir="dwn" class="dwn"><img src="images/remove.svg" title="" alt="" /></a>
+                                    </span>
+                                    <input type="text" class="pl-ns-value" max="20" min="0" value="0"/>
+                                    <span class="ns-btn">
+                                        <a data-dir="up" class="up"><img src="images/add.svg" title="" alt="" /></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="additional_product">
+                                <img src="images/vase.svg" title="" alt="" />
+                                <div class="add_pr_title">
+                                    <span>Oyuncaq ayı</span>
+                                    <span class="add_price">(+50.00 ₼)</span>
+                                </div>
+                                <div class="number-spinner">
+                                    <span class="ns-btn">
+                                        <a data-dir="dwn" class="dwn"><img src="images/remove.svg" title="" alt="" /></a>
+                                    </span>
+                                    <input type="text" class="pl-ns-value" max="20" min="0" value="0"/>
+                                    <span class="ns-btn">
+                                        <a data-dir="up" class="up"><img src="images/add.svg" title="" alt="" /></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <a class="basket_btn"><img src="images/shopper-w.svg" />Səbətə at</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="services_about">
+        <div class="services_slider">
+            <div>
+                <div class="box">
+                    <img src="images/flower.svg" />
+                    <span>Təravətli gülləri hought peonie couldn't get any more excitig.</span>
+                </div>
+            </div>
+            <div>
+                <div class="box">
+                    <img src="images/surface1.svg" />
+                    <span>Təhlükəsiz online ödəniş peonie couldn't get any more.</span>
+                </div>
+            </div>
+            <div>
+                <div class="box">
+                    <img src="images/clock.svg" />
+                    <span>Sürətli çatdırılma hought peonie couldn't get any more.</span>
+                </div>
+            </div>
+            <div>
+                <div class="box">
+                    <img src="images/hands-and-gestures.svg" />
+                    <span>Peşəkar müştəri xidməti peonie couldn't get any more.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="comments">
+        <h1 class="page_title">Şərhlər</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="comment_box">
+                    <span class="bg_title">DJ</span>
+                    <div class="comment_box_content">
+                        <div class="comment_box_header">
+                            <div>
+                                <span class="user_name">Dorothy Jones</span>
+                                <span class="year">2020</span>
+                            </div>
+                            <form class="user_rating_form">
+                                <span class="rating_desc">2/5</span>
+                                <span class="user_rating">
+                                    <input type="radio" name="rating" value="5"><span class="star"></span>
+                                    <input type="radio" name="rating" value="4"><span class="star"></span>
+                                    <input type="radio" name="rating" value="3"><span class="star"></span>
+                                    <input type="radio" name="rating" value="2"><span class="star"></span>
+                                    <input type="radio" name="rating" value="1"><span class="star"></span>
+                                </span>
+                            </form>
+                        </div>
+                        <p class="comment_text">
+                            <span class="more">Thought peonies couldn't get any more exciting? Think again. 
+                            Because these ones are colour changing! Once they've burst 
+                            open they change from coral to  pink to cream. Just. Like. 
+                            Magic. Finished with little craspedia sunshine scented freesia, 
+                            she's suc</span>
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="comment_box">
+                    <span class="bg_title">DJ</span>
+                    <div class="comment_box_content">
+                        <div class="comment_box_header">
+                            <div>
+                                <span class="user_name">Dorothy Jones</span>
+                                <span class="year">2020</span>
+                            </div>
+                            <form class="user_rating_form">
+                                <span class="rating_desc">2/5</span>
+                                <span class="user_rating">
+                                    <input type="radio" name="rating" value="5"><span class="star"></span>
+                                    <input type="radio" name="rating" value="4"><span class="star"></span>
+                                    <input type="radio" name="rating" value="3"><span class="star"></span>
+                                    <input type="radio" name="rating" value="2"><span class="star"></span>
+                                    <input type="radio" name="rating" value="1"><span class="star"></span>
+                                </span>
+                            </form>
+                        </div>
+                        <p class="comment_text">
+                            <span class="more">Thought peonies couldn't get any more exciting? Think again. 
+                            Because these ones are colour changing! Once they've burst 
+                            open they change from coral to  pink to cream. Just. Like. 
+                            Magic. Finished with little craspedia sunshine scented freesia, 
+                            she's suc</span>
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="comment_box">
+                    <span class="bg_title">DJ</span>
+                    <div class="comment_box_content">
+                        <div class="comment_box_header">
+                            <div>
+                                <span class="user_name">Dorothy Jones</span>
+                                <span class="year">2020</span>
+                            </div>
+                            <form class="user_rating_form">
+                                <span class="rating_desc">2/5</span>
+                                <span class="user_rating">
+                                    <input type="radio" name="rating" value="5"><span class="star"></span>
+                                    <input type="radio" name="rating" value="4"><span class="star"></span>
+                                    <input type="radio" name="rating" value="3"><span class="star"></span>
+                                    <input type="radio" name="rating" value="2"><span class="star"></span>
+                                    <input type="radio" name="rating" value="1"><span class="star"></span>
+                                </span>
+                            </form>
+                        </div>
+                        <p class="comment_text">
+                            <span class="more">Thought peonies couldn't get any more exciting? Think again. 
+                            Because these ones are colour changing! Once they've burst 
+                            open they change from coral to  pink to cream. Just. Like. 
+                            Magic. Finished with little craspedia sunshine scented freesia, 
+                            she's suc</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="comment_box">
+                    <span class="bg_title">DJ</span>
+                    <div class="comment_box_content">
+                        <div class="comment_box_header">
+                            <div>
+                                <span class="user_name">Dorothy Jones</span>
+                                <span class="year">2020</span>
+                            </div>
+                            <form class="user_rating_form">
+                                <span class="rating_desc">2/5</span>
+                                <span class="user_rating">
+                                    <input type="radio" name="rating" value="5"><span class="star"></span>
+                                    <input type="radio" name="rating" value="4"><span class="star"></span>
+                                    <input type="radio" name="rating" value="3"><span class="star"></span>
+                                    <input type="radio" name="rating" value="2"><span class="star"></span>
+                                    <input type="radio" name="rating" value="1"><span class="star"></span>
+                                </span>
+                            </form>
+                        </div>
+                        <p class="comment_text">
+                            <span class="more">Thought peonies couldn't get any more exciting? Think again. 
+                            Because these ones are colour changing! Once they've burst 
+                            open they change from coral to  pink to cream. Just. Like. 
+                            Magic. Finished with little craspedia sunshine scented freesia, 
+                            she's suc</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_list">
+        <h2 class="page_title">Oxşar məhsullar</h2>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="product-page.html" class="item">
+                        <span class="img"><img src="images/product-img.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="" class="item">
+                        <span class="img"><img src="images/product-img1.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="" class="item">
+                        <span class="img"><img src="images/product-img2.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3">
+                <div class="item-overlay">
+                    <a href="" class="item">
+                        <span class="img"><img src="images/product-img3.png"></span>
+                        <span class="title">A Year of Fortnightly Flowers</span>
+                        <span class="price old_price">45 ₼</span>
+                        <span class="price">30 ₼</span>
+                    </a>
+                    <a class="add_favorites"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

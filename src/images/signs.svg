@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.83" height="11.83" viewBox="0 0 11.83 11.83">
+  <g id="signs" transform="translate(0.25 0.25)">
+    <path id="Path_3931" data-name="Path 3931" d="M5.665,11.33A5.665,5.665,0,1,1,11.33,5.665,5.671,5.671,0,0,1,5.665,11.33Zm0-10.621a4.957,4.957,0,1,0,4.957,4.957A4.962,4.962,0,0,0,5.665.708Zm0,0" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5"/>
+    <path id="Path_3932" data-name="Path 3932" d="M133.311,240.708h-4.957a.354.354,0,1,1,0-.708h4.957a.354.354,0,1,1,0,.708Zm0,0" transform="translate(-125.168 -234.689)" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5"/>
+    <path id="Path_3933" data-name="Path 3933" d="M240.354,133.665a.354.354,0,0,1-.354-.354v-4.957a.354.354,0,0,1,.708,0v4.957A.354.354,0,0,1,240.354,133.665Zm0,0" transform="translate(-234.689 -125.168)" fill="#ff8f00" stroke="#ff8f00" stroke-width="0.5"/>
+  </g>
+</svg>

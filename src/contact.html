@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Əlaqə</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container contact_page">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="comment_slider">
+                {% for i in 1..7 %}
+                <div>
+                    <div class="comment_box">
+                        <span class="img"><img src="images/usr{{i%3+1}}.png" /></span>
+                        <div class="content">
+                            <span class="title">Dorothy Jones</span>
+                            <span class="text">"From its medieval origins to the digital era, 
+                                learn everything there is to know about the digital 
+                                ubiquitous lorem ipsum passage."</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h1 class="page_title">Bizə yazın</h1>
+            <form action="" method="">
+                <div class="form">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label for="name">Ad, Soyad</label>
+                            <input name="name" class="validate[required]" type="text" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label for="email">E-poçt</label>
+                            <input name="email" class="validate[required,custom[email]]" type="email" />
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label for="email">Mövzu</label>
+                            <input name="email" class="validate[required]" type="text" />
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="check_wrap flex_mobile">
+								<div class="radio_group">
+									<label class="radio"><input name="t" type="radio" value="1"><span>Sual</span></label>
+                                    <label class="radio"><input name="t" type="radio" value="2"><span>Təklif</span></label>
+                                    <label class="radio"><input name="t" type="radio" value="3"><span>İrad</span></label>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <label>Mətn</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button type="button">Göndər</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Tez-tez verilən suallar</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="row faq">
+        <div class="col-md-2">
+            <nav class="navigation" id="mainNav">
+                <a class="navigation_link" href="#about">About</a>
+                <a class="navigation_link" href="#partners">Partners</a>
+                <a class="navigation_link" href="#how-to-ordering">How to Ordering</a>
+                <a class="navigation_link" href="#contact-seller">Contact Seller</a>
+                <a class="navigation_link" href="#policy-and-reporting">Policy and reporting</a>
+            </nav>
+        </div>
+        <div class="col-md-10">
+            <div class="page-section hero" id="about">
+                <h1 class="page_title">About</h1>
+                <p>Founded in August of 2011, BloomNation is a trusted community marketplace 
+                    for people to list, discover, and send unique bouquets handcrafted by local 
+                    florists across the country. Whether you’re looking for the traditional dozen 
+                    roses or a one-of-a-kind design, BloomNation lets you discover and send the 
+                    perfect gift. With our epic customer service and growing community of florists, 
+                    BloomNation is the easiest and most reliable way for ordering flowers online.</p>
+            </div>
+            <div class="page-section" id="partners" data-match-height="a.item">
+                <h1 class="page_title">Partners</h1>
+                <div class="slider">
+                    {% for i in 1..6 %}
+                    <div><a class="item"><img src="images/placeholder.com-logo4.png"/></a></div>
+                    {% endfor %}
+                </div>
+                <p>Whether you’re looking for the traditional <a class="desc_link">here</a> roses or a one-of-a-kind design, BloomNation.</p>
+            </div>
+            <div class="page-section" id="how-to-ordering">
+                <h1 class="page_title">How to Ordering</h1>
+                <span class="title_sec">How can I play for my appointment?</span>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+                    <a class="desc_link">literature</a> from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                    College in Virginia, looked up one one of the more obscure Latin words, consectetur, from a Lorem Ipsum <a class="desc_link">passage</a>, and going through the 
+                    cites of the word in classical literature, 
+                    discovered the undoubtable source. Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                    <hr>
+                <span class="title_sec">What can I expect at my first consultation?</span>
+                <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                    words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                    discovered the undoubtable source.Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+                <hr>
+                <span class="title_sec">What are your opening hours?</span>
+                <p>The word in classical literature, discovered the undoubtable source.Contrary to popular belief, 
+                    Lorem Ipsum is not simply random text.</p>
+            </div>
+            <div class="page-section" id="contact-seller">
+                <h1 class="page_title">Contact Seller</h1>
+                <span class="title_sec">How can I play for my appointment?</span>
+                <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the 
+                    more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of 
+                    the word in classical literature, discovered the undoubtable source.Contrary to popular belief, 
+                    Lorem Ipsum is not simply random text.</p>
+                <hr>
+                <span class="title_sec">What are your opening hours?</span>
+                <p>The word in classical literature, discovered the undoubtable source.Contrary to popular belief, 
+                    Lorem Ipsum is not simply random text.</p>
+                <hr>
+            </div>
+            <div class="page-section" id="policy-and-reporting">
+                <span class="title_sec">Is the cost of the appointment covered by private health insurance?</span>
+                <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the 
+                    more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of 
+                    the word in classical literature, discovered the undoubtable source.Contrary to popular belief, 
+                    Lorem Ipsum is not simply random text.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

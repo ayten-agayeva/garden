@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Blog</span></a>
+                <span itemprop="position" content="2"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="page_title_wrap">
+        <h1 class="page_title">Blog</h1>
+    </div>
+    <div class="blog_list">
+		<div class="row" data-match-height=".item">
+			{% for i in 0..8 %}
+			<div class="col-md-4">
+				<a class="item" href="/blog-details.html">
+					<img src="images/sample/blog/list_{{i%4+1}}.png" />
+					<span class="title">Richard McClintock, a Latin scholar from  Hampden-College, is credited with discovering.</span>
+                    <span class="desc">So how did the classical Latin become so incoherent? According to McClintock, a 15th</span>
+                    <span class="dtl">
+						<span class="date">25.12.2019</span>
+					</span>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="how-it-works">
+	<div class="bnr"></div>
+	<div class="block">
+		<div class="container">
+			<div class="title"><h1>How it works</h1></div>
+			<div class="steps row">
+				<div class="col-md-4">
+					<img src="images/how-it-works-step-1.svg"/>
+					<div class="desc">Thought peonies couldn't get any more exciting?  Think again because.</div>
+				</div>
+				<div class="col-md-4">
+					<img src="images/how-it-works-step-2.svg"/>
+					<div class="desc">Thought peonies couldn't get any more exciting?  Think again because.</div>
+				</div>
+				<div class="col-md-4">
+					<img src="images/how-it-works-step-3.svg"/>
+					<div class="desc">Thought peonies couldn't get any more exciting?  Think again because.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="product_list">
+		<div class="slider">
+			{% for i in 1..30 %}
+			<div>
+				<div class="item-overlay">
+					<a href="product-page.html" class="item">
+						<span class="img">
+							<img src="images/product-img{{i%3+1}}.png">
+							<span class="label">ayliq</span>
+							<span class="dest_rating">
+								<span>"Thought peonies couldn't get any more exciting?  Think again because. Peonies couldn't get any more exciting?  Think again because. these ones. are colour changing! These ones. are colour changing!"</span>
+								<form class="user_rating_form">
+									<span class="user_rating">
+										<input type="radio" name="rating" value="5"><span class="star"></span>
+										<input type="radio" name="rating" value="4"><span class="star"></span>
+										<input type="radio" name="rating" value="3"><span class="star"></span>
+										<input type="radio" name="rating" value="2"><span class="star"></span>
+										<input type="radio" name="rating" value="1"><span class="star"></span>
+									</span>
+								</form>
+							</span>
+						</span>
+						<span class="title">A Year of Fortnightly Flowers</span>
+						<span class="price old_price">45 ₼</span>
+						<span class="price">30 ₼</span>
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<div class="form subscribe">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<form>
+					<input name="email" class="validate[required,custom[email]]" type="email" placeholder="E-mail" />
+					<button type="submit" class="">Abunə ol</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="breadrrumb_wrap">
+    <div class="container">
+        <ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="index.html" class="home"><span itemprop="name">Ana səhifə</span></a>
+                <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href=""><span itemprop="name">Hesabım</span></a>
+                <span itemprop="position" content="3"></span>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container account_mobile">
+    <div class="page_title_wrap">
+        <div class="user">
+            <div class="user_img">
+                <img src="./images/user.png">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="user_info">
+                <a href=""><h2>Jesse Pinkman</h2></a>
+                <span>info@marcom.az</span>
+            </div>
+        </div>
+	</div>
+	<div class="page_desc">
+		Latin words, combined with a handful of model 
+		sentence structures, to generate Lorem Ipsum which 
+		looks reason-able. The generated Lorem Ipsum is 
+		therefore always.
+	</div>
+    <div class="acc_menu">
+        <a href="account-details.html">Profil məlumatları</a>
+        <a href="special-order.html">Fərdi sifariş</a>
+        <a href="history.html">Tarixçə</a>
+        <a href="coupon.html">Promokodu</a>
+        <a href="reminder.html">Xatırlatma</a>
+        <a href="konsiyerj.html">Konsiyerj</a>
+        <a href="">Çıxış</a>
+    </div>
+</div>
+<div class="popup popup_form shopping-cart-address">
+	<div class="popup_form_inner">
+		<h1>Çatdırılma məlumatları</h1>
+		<div class="form">
+			<form method="post" class="validation" action="">
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="name">Ad, Soyad</label>
+						<input name="name" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="adress">Ünvan</label>
+						<input name="adress" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="adress1">Ünvana yaxın yer</label>
+						<input name="adress1" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="phone">Telefon</label>
+						<input type="text" class="validate[required]" data-mask="phone" />
+						<span class="alert_phone"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="postal">Poçt kod</label>
+						<input name="postal" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="adresstitle">Ünvan başlığı*</label>
+						<input name="adresstitle" class="validate[required]" type="text" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<button type="submit" class="btn">Yadda saxla</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
